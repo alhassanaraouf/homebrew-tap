@@ -1,9 +1,10 @@
 # homebrew-tap
 
-Homebrew tap for [Valkey.app](https://valkey.app/).
+Homebrew tap for my Mac apps.
 
-```sh
-brew install --cask alhassanaraouf/tap/valkey
-```
+| App | Install |
+|-----|---------|
+| [Valkey.app](https://valkey.app/) | `brew install --cask alhassanaraouf/tap/valkey` |
+| [NotesFloat](https://github.com/alhassanaraouf/NotesFloat) (macOS 26+) | `brew install --cask alhassanaraouf/tap/notesfloat` |
 
-Valkey.app isn't notarized yet, so macOS asks you to allow it once on first launch: [install steps](https://valkey.app/#install).
+Neither app is notarized yet, so macOS may block the first launch. Allow it once with `xattr -dr com.apple.quarantine /Applications/<App>.app` (Valkey.app: [install steps](https://valkey.app/#install)).
