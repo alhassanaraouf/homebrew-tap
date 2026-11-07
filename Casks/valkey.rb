@@ -17,15 +17,15 @@ cask "valkey" do
 
   app "Valkey.app"
 
-  caveats <<~EOS
-    Valkey.app isn't notarized yet, so macOS may say it is damaged on first launch.
-    Allow it once with:
-      xattr -dr com.apple.quarantine /Applications/Valkey.app
-  EOS
-
   zap trash: [
     "~/Library/Application Support/Valkey",
     "~/Library/Caches/app.valkey.Valkey",
     "~/Library/Preferences/app.valkey.Valkey.plist",
   ]
+
+  caveats <<~EOS
+    Valkey.app isn't notarized yet, so macOS may say it is damaged on first launch.
+    Allow it once with:
+      xattr -dr com.apple.quarantine /Applications/Valkey.app
+  EOS
 end
