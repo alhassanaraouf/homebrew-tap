@@ -1,6 +1,6 @@
 cask "valkey" do
-  version "1.4.2"
-  sha256 "f7bc0daa477ffff60519448ddea9feb595525a0bcb5d0cdf8cacf93bae002292"
+  version "1.5"
+  sha256 "765f1e289fea44cf975ed33ec02ae0658ff48b49de04176b68fed1ce512a5635"
 
   url "https://github.com/alhassanaraouf/Valkey.app/releases/download/app-v#{version}/Valkey.dmg"
   name "Valkey.app"
